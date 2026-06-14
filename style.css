@@ -397,7 +397,15 @@ em { font-family: "Playfair Display", serif; font-weight: 600; }
 .chart span:nth-child(2) { height: 52%; }.chart span:nth-child(3) { height: 46%; }.chart span:nth-child(4) { height: 80%; }.chart span:nth-child(5) { height: 100%; background: var(--orange); }
 
 .phone { height: 76%; aspect-ratio: .5; border: 3px solid var(--ink); border-radius: 35px; background: #151713; box-shadow: 16px 17px 0 rgba(23,23,19,.17); padding: 8px; }
-.phone-content { height: 100%; background: #f3eee5; border-radius: 25px; padding: 14% 10%; position: relative; overflow: hidden; }
+.phone-content {
+  height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 25px;
+  padding: 14% 10%;
+  position: relative;
+  overflow: hidden;
+}
 .phone-notch { position: absolute; top: 16%; left: 50%; transform: translateX(-50%); width: 75px; height: 15px; background: var(--ink); border-radius: 10px; z-index: 2; }
 .phone-content > span { font: 500 7px "DM Mono"; text-transform: uppercase; letter-spacing: .1em; }
 .phone-content > strong { display: block; margin-top: 10px; font-size: clamp(1.4rem, 3.2vw, 3.5rem); line-height: .95; letter-spacing: -.07em; }
@@ -529,4 +537,31 @@ footer div { justify-self: end; display: flex; gap: 25px; font: 500 9px "DM Mono
 
 @media (pointer: coarse) {
   .aurora-cursor { display: none; }
+}
+.stat-ring {
+  margin: 18% auto 0;
+  width: 70%;
+  aspect-ratio: 1;
+  border: 12px solid var(--acid);
+  outline: 1px solid var(--ink);
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.portrait-placeholder {
+  width: 70%;
+  aspect-ratio: 4 / 5;
+  background: var(--acid);
+  margin-top: 110px;
+  transform: rotate(-3deg);
+  overflow: hidden;
+  border-radius: 18px;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
