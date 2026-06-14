@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Tanmay Patel, a product designer creating thoughtful digital experiences.">
+  <title>Tanmay Patel — Product Designer</title>
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("portfolio-theme");
+      const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = savedTheme || preferredTheme;
+    } catch {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="intro-loader" aria-hidden="true">
+    <div class="intro-frame">
+      <span class="intro-kicker">Product Designer</span>
+      <h1><span>Tanmay Patel</span></h1>
+      <div class="intro-line"><i></i></div>
+    </div>
+  </div>
+  <div class="noise"></div>
+  <canvas class="aurora-cursor" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <a class="brand header-name" href="#top" aria-label="Tanmay Patel home">Tanmay Patel</a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+        <span class="theme-dot"></span>
+        <span class="theme-text">Dark mode</span>
+      </button>
+      <a class="availability" href="#contact"><span></span> Available for work</a>
+    </div>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-kicker reveal">Tanmay Patel · Product Designer</div>
+      <h1 class="reveal">
+        I craft digital<br>
+        experiences that<br>
+        <em>feel inevitable.</em>
+      </h1>
+      <div class="hero-bottom reveal">
+        <p>I turn complex ideas into clear, useful, and beautifully considered product experiences.</p>
+        <a class="circle-link" href="#work" aria-label="See selected work">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+        </a>
+      </div>
+      <div class="hero-orbit" aria-hidden="true">
+        <span class="orbit-ring"></span>
+        <span class="orbit-dot dot-one"></span>
+        <span class="orbit-dot dot-two"></span>
+        <span class="orbit-dot dot-three"></span>
+        <span class="orbit-dot dot-four"></span>
+        <span class="orbit-dot dot-five"></span>
+        <span class="orbit-label">THINK<br>DESIGN<br>BUILD</span>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Skills">
+      <div class="skills-heading">
+        <span>Skills</span>
+      </div>
+      <div class="marquee-track">
+        <span>UX</span><b>✦</b><span>UI</span><b>✦</b><span>RESPONSIVE DESIGN</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>WIREFRAMING</span><b>✦</b><span>TYPOGRAPHY</span><b>✦</b><span>CREATIVE DESIGN</span><b>✦</b><span>PRODUCT DESIGN</span><b>✦</b><span>USER RESEARCH</span><b>✦</b><span>VISUAL DESIGN</span><b>✦</b><span>USABILITY TESTING</span><b>✦</b><span>USER FLOWS</span><b>✦</b><span>DESIGN THINKING</span><b>✦</b><span>INTERACTION DESIGN</span><b>✦</b><span>INFORMATION ARCHITECTURE</span><b>✦</b><span>DESIGN SYSTEM</span><b>✦</b>
+        <span>UX</span><b>✦</b><span>UI</span><b>✦</b><span>RESPONSIVE DESIGN</span><b>✦</b><span>PROTOTYPING</span><b>✦</b><span>WIREFRAMING</span><b>✦</b><span>TYPOGRAPHY</span><b>✦</b><span>CREATIVE DESIGN</span><b>✦</b><span>PRODUCT DESIGN</span><b>✦</b><span>USER RESEARCH</span><b>✦</b><span>VISUAL DESIGN</span><b>✦</b><span>USABILITY TESTING</span><b>✦</b><span>USER FLOWS</span><b>✦</b><span>DESIGN THINKING</span><b>✦</b><span>INTERACTION DESIGN</span><b>✦</b><span>INFORMATION ARCHITECTURE</span><b>✦</b><span>DESIGN SYSTEM</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="work section-shell" id="work">
+      <div class="section-heading reveal">
+        <span>01 / Selected work</span>
+        <h2>A few things<br>I’ve <em>made.</em></h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card reveal">
+          <div class="project-visual visual-one">
+            <div class="project-status"><i></i> Currently working · Coming soon</div>
+            <div class="mock-browser">
+              <div class="browser-bar"><i></i><i></i><i></i></div>
+              <div class="browser-content">
+                <span class="mini-label">AGRICULTURE / SIMPLIFIED</span>
+                <strong>Grow with<br><em>confidence.</em></strong>
+                <div class="chart"><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span>Product design · Prototyping</span>
+              <h3>FarmMate</h3>
+            </div>
+            <p>A thoughtful farming companion designed to help farmers make confident, informed decisions.</p>
+            <a href="#contact" aria-label="FarmMate case study coming soon">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-two">
+            <div class="project-status"><i></i> Currently working · Coming soon</div>
+            <div class="phone">
+              <div class="phone-notch"></div>
+              <div class="phone-content">
+                <span>Stay protected</span>
+                <strong>Safety in<br>your hands.</strong>
+                <div class="stat-ring"><b>24/7</b><small>protected</small></div>
+                <div class="phone-stats"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              </div>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span>Product design · Mobile app</span>
+              <h3>SheShield</h3>
+            </div>
+            <p>A personal safety experience focused on helping women feel informed, connected, and supported.</p>
+            <a href="#contact" aria-label="SheShield case study coming soon">↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-visual visual-three">
+            <div class="project-status"><i></i> Currently working · Coming soon</div>
+            <div class="poster poster-back"><span>03</span></div>
+            <div class="poster poster-front">
+              <small>Plan · Connect · Celebrate</small>
+              <strong>EVENT<br><em>MATE</em></strong>
+              <div class="poster-circle"></div>
+              <span>YOUR EVENT COMPANION</span>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+          <div class="project-info">
+            <div>
+              <span>Product design · Event platform</span>
+              <h3>EventMate</h3>
+            </div>
+            <p>A seamless platform that makes planning, discovering, and enjoying events feel effortless.</p>
+            <a href="#contact" aria-label="EventMate case study coming soon">↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="tools-marquee" aria-label="Design and development tools">
+      <div class="tools-heading">
+        <span>Tools I use</span>
+      </div>
+      <div class="tools-track">
+        <span>FIGMA</span><b>✦</b><span>FIGJAM</span><b>✦</b><span>CANVA</span><b>✦</b><span>NOTION</span><b>✦</b><span>HTML 5</span><b>✦</b><span>CSS 3</span><b>✦</b><span>PROMPT ENGINEERING</span><b>✦</b><span>CLAUDE</span><b>✦</b><span>CHATGPT</span><b>✦</b><span>LOVABLE</span><b>✦</b><span>CODEX</span><b>✦</b>
+        <span>FIGMA</span><b>✦</b><span>FIGJAM</span><b>✦</b><span>CANVA</span><b>✦</b><span>NOTION</span><b>✦</b><span>HTML 5</span><b>✦</b><span>CSS 3</span><b>✦</b><span>PROMPT ENGINEERING</span><b>✦</b><span>CLAUDE</span><b>✦</b><span>CHATGPT</span><b>✦</b><span>LOVABLE</span><b>✦</b><span>CODEX</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="about section-shell" id="about">
+      <div class="about-aside reveal">
+        <span>02 / About</span>
+        <div class="portrait-placeholder">
+          <span>TP</span>
+        </div>
+      </div>
+      <div class="about-copy reveal">
+        <h2>I like making things<br>that make <em>sense.</em></h2>
+        <p class="large-copy">I’m Tanmay, a product designer focused on turning ambitious ideas into products people genuinely enjoy using.</p>
+        <p class="strength-copy">My strength as a Product Designer is understanding user needs through user research, identifying pain points, and designing solutions that solve real user problems and create meaningful experiences.</p>
+        <div class="about-grid">
+          <p>I care about the full journey, from the first sketch to the final interaction. My work combines strategic thinking, visual craft, and thoughtful technology.</p>
+          <p>When I’m not building, I’m usually learning something new, collecting references, or making a needlessly precise cup of coffee.</p>
+        </div>
+        <div class="capabilities">
+          <span>What I do</span>
+          <ul>
+            <li><b>01</b> Product & UI/UX Design</li>
+              <li><b>02</b> Prototyping & Interaction</li>
+            <li><b>03</b> Brand Identity</li>
+            <li><b>04</b> Creative Direction</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="resume section-shell" id="resume">
+      <div class="section-heading reveal">
+        <span>03 / Resume</span>
+        <h2>Experience in<br><em>progress.</em></h2>
+      </div>
+
+      <div class="resume-grid reveal">
+        <div class="resume-intro">
+          <span>Product Designer</span>
+          <h3>Designing useful products through research, clarity, and thoughtful interaction.</h3>
+          <p>This resume snapshot is ready to customize with your real education, internships, certifications, and achievements.</p>
+          <a class="resume-action" href="mailto:tanmayjkamli.2121@gmail.com?subject=Resume%20Request">Request Resume ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+
+      <div class="contact-inner reveal">
+        <span>04 / Let’s talk</span>
+        <h2>Have a project<br>in mind? <em>Say hello.</em></h2>
+        <div class="contact-links">
+          <a class="email-link" href="mailto:tanmayjkamli.2121@gmail.com" aria-label="Email Tanmay Patel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm9 8 7-5V7l-7 5-7-5v1l7 5Z"/></svg>
+            <span>tanmayjkamli.2121@gmail.com</span>
+            <b>↗</b>
+          </a>
+          <a class="email-link" href="tel:+918153836626">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2 10 5.4 8.1 8.1c1.3 2.7 3.1 4.5 5.8 5.8l2.7-1.9 3.4 3.4-1.7 4.1c-.3.7-1 1.1-1.8 1C9.1 19.4 4.6 14.9 3.5 7.5c-.1-.8.3-1.5 1-1.8L6.6 2Z"/></svg>
+            <span>+91 8153836626</span>
+            <b>↗</b>
+          </a>
+        </div>
+      </div>
+
+      <footer>
+        <a class="brand" href="#top">TP<span>.</span></a>
+        <p><span class="copyright-symbol">©</span> <span id="year"></span> Tanmay Patel</p>
+        <div class="social-links">
+          <a href="https://www.behance.net/tanmaypatell25" aria-label="Behance">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 10.9s1.8-.1 1.8-2.2c0-2.1-1.5-3.2-3.4-3.2H0v12h6.2s3.8.1 3.8-3.5c0 0 .2-2.7-2.2-3.1ZM2.7 7.6h3.5s.9 0 .9 1.2-.6 1.3-1.1 1.3H2.7V7.6Zm3.4 7.8H2.7v-3.2h3.5s1.2 0 1.2 1.6c0 1.4-.9 1.6-1.3 1.6ZM16 8.5c-4.6 0-4.6 4.6-4.6 4.6s-.3 4.6 4.6 4.6c0 0 4.1.2 4.1-3.2h-2.2s.1 1.3-1.8 1.3c0 0-2.2.1-2.2-2.1h6.3s.7-5.2-4.2-5.2Zm-2 3.6s.3-1.8 2.1-1.8 1.8 1.8 1.8 1.8H14Zm-.6-6h5.2v1.6h-5.2V6.1Z"/></svg>
+            <span>Behance</span>
+          </a>
+          <a href="https://www.linkedin.com/in/tanmay-patel-1a8282310?utm_source=share_via&utm_content=profile&utm_medium=member_android" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.3 7.8H1.1V21h4.2V7.8ZM3.2 1.1a2.4 2.4 0 1 0 0 4.8 2.4 2.4 0 0 0 0-4.8ZM21 13.4c0-4-2.1-5.9-5-5.9-2.3 0-3.4 1.3-4 2.2V7.8H7.8V21H12v-7.3c0-1.9.4-3.8 2.8-3.8 2.4 0 2.4 2.2 2.4 3.9V21H21v-7.6Z"/></svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <div class="mobile-menu" aria-hidden="true">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
