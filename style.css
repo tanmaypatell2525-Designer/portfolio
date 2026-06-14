@@ -110,6 +110,9 @@ a { color: inherit; text-decoration: none; }
   font-style: italic;
   animation-delay: .18s;
 }
+html[data-theme="dark"] .intro-frame h1 span:last-child {
+  color: white;
+}
 .intro-line {
   width: min(360px, 60vw);
   height: 1px;
