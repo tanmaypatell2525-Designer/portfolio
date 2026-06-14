@@ -565,3 +565,50 @@ footer div { justify-self: end; display: flex; gap: 25px; font: 500 9px "DM Mono
   object-fit: cover;
   display: block;
 }
+html[data-theme="dark"] .poster-front {
+  background: #1a1b17;
+  color: #f4f0e8;
+  border-color: #f4f0e8;
+}
+
+html[data-theme="dark"] .poster-circle {
+  border-color: #f4f0e8;
+}
+
+html[data-theme="dark"] .poster-back {
+  color: #10110e;
+}
+
+html[data-theme="dark"] .mock-browser {
+  background: #1a1b17;
+  border-color: #f4f0e8;
+  box-shadow: 18px 18px 0 rgba(0,0,0,.35);
+}
+
+html[data-theme="dark"] .browser-bar {
+  border-bottom-color: #f4f0e8;
+}
+
+html[data-theme="dark"] .browser-bar i {
+  border-color: #f4f0e8;
+}
+
+html[data-theme="dark"] .browser-content {
+  color: #f4f0e8;
+}
+
+html[data-theme="dark"] .browser-content em {
+  color: var(--acid);
+}
+
+html[data-theme="dark"] .chart {
+  border-bottom-color: #f4f0e8;
+}
+
+html[data-theme="dark"] .chart span {
+  background: #f4f0e8;
+}
+
+html[data-theme="dark"] .chart span:last-child {
+  background: var(--orange);
+}
