@@ -534,10 +534,6 @@ footer div { justify-self: end; display: flex; gap: 25px; font: 500 9px "DM Mono
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   .aurora-cursor { display: none; }
 }
-
-@media (pointer: coarse) {
-  .aurora-cursor { display: none; }
-}
 .stat-ring {
   margin: 18% auto 0;
   width: 70%;
