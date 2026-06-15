@@ -91,7 +91,7 @@ window.addEventListener("scroll", () => {
 }, { passive: true });
 updateSectionPalette();
 
-if (auroraCanvas && !reducedMotion && !coarsePointer) {
+if (auroraCanvas && !reducedMotion) {
   const context = auroraCanvas.getContext("2d");
   const trail = Array.from({ length: 18 }, () => ({
     x: window.innerWidth / 2,
@@ -114,18 +114,42 @@ if (auroraCanvas && !reducedMotion && !coarsePointer) {
     context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
   };
 
-  window.addEventListener("resize", resizeAurora);
-  window.addEventListener("pointermove", (event) => {
-    pointer.x = event.clientX;
-    pointer.y = event.clientY;
-    isVisible = true;
-    clearTimeout(movementTimer);
-    movementTimer = setTimeout(() => { isVisible = false; }, 120);
-  });
-  document.documentElement.addEventListener("mouseleave", () => {
-    clearTimeout(movementTimer);
-    isVisible = false;
-  });
+ window.addEventListener("resize", resizeAurora);
+
+  if (coarsePointer) {
+    // Mobile: aurora follows finger touch
+    window.addEventListener("touchstart", (e) => {
+      const t = e.touches[0];
+      pointer.x = t.clientX; pointer.y = t.clientY;
+      trail.forEach((p) => { p.x = pointer.x; p.y = pointer.y; });
+      isVisible = true;
+      clearTimeout(movementTimer);
+      movementTimer = setTimeout(() => { isVisible = false; }, 1800);
+    }, { passive: true });
+    window.addEventListener("touchmove", (e) => {
+      const t = e.touches[0];
+      pointer.x = t.clientX; pointer.y = t.clientY;
+      isVisible = true;
+      clearTimeout(movementTimer);
+      movementTimer = setTimeout(() => { isVisible = false; }, 1800);
+    }, { passive: true });
+    window.addEventListener("touchend", () => {
+      clearTimeout(movementTimer);
+      movementTimer = setTimeout(() => { isVisible = false; }, 1800);
+    }, { passive: true });
+  } else {
+    window.addEventListener("pointermove", (event) => {
+      pointer.x = event.clientX;
+      pointer.y = event.clientY;
+      isVisible = true;
+      clearTimeout(movementTimer);
+      movementTimer = setTimeout(() => { isVisible = false; }, 120);
+    });
+    document.documentElement.addEventListener("mouseleave", () => {
+      clearTimeout(movementTimer);
+      isVisible = false;
+    });
+  }
 
   const drawAurora = (time) => {
     const hueDistance = ((targetAuroraHue - currentAuroraHue + 540) % 360) - 180;
